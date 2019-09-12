@@ -62,4 +62,4 @@ typings/
 **/dist
 **/lib
 **/public
-**/.rtp2_cache
+packages/*/.rtp2_cache
