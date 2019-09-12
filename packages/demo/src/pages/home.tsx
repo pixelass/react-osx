@@ -28,7 +28,7 @@ export class Home extends React.Component {
 					<h2>Checkbox</h2>
 					<Checkbox/>
 					<br/>
-					<Checkbox label="Body"/>
+					<Checkbox label="Body" checked/>
 					<br/>
 					<Checkbox label="Title"/>
 					<h2>Buttons</h2>
