@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/pages/not-found.tsx"],"names":["NotFound"],"mappings":";;;;;;;AAAA;;;;;;;;;;;;;AAEO,MAAMA,QAAQ,GAAG,MAAM,+CAAvB;;;;;;;;;;;;0BAAMA,Q","sourcesContent":["import React from \"react\";\n\nexport const NotFound = () => <h1>404</h1>;\n"],"file":"not-found.js"}
