@@ -2,7 +2,6 @@ import {createElement} from "react";
 import {hydrate} from "react-dom";
 import {BrowserRouter} from "react-router-dom";
 import {App} from "./app";
-import "./style.css";
 
 const appRoot = document.querySelector("[data-app-root]");
 const {classList} = document.documentElement;
