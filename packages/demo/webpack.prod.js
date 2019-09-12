@@ -1,5 +1,5 @@
 const config = require("@ngineer/config-webpack/production");
-const {serverRenderer} = require("@ngineer/server");
+const {serverRenderer} = require("./lib/server/renderer");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 const merge = require("webpack-merge");
