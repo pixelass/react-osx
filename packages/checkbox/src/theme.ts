@@ -38,6 +38,7 @@ export const theme = {
 			borderRadius: "3px",
 			boxShadow: `inset 0 0.5px 0.5px 0 ${colors.grey[200]}, ${decoration.shadow[1]}`,
 			font: {
+				size: "12px",
 				weight: "normal",
 				family: "-apple-system, sans-serif"
 			},
