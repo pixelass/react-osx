@@ -59,7 +59,10 @@ typings/
 
 # next.js build output
 .next
-**/dist
-**/lib
-**/public
-packages/*/.rtp2_cache
+
+# build & dev output
+packages/**/dist/
+packages/**/lib/
+packages/**/public/
+packages/*/.rpt2_cache/
+__template/
