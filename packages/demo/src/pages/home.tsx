@@ -1,4 +1,5 @@
 import {Button, ButtonGroup, GroupButton, theme as buttonTheme} from "@react-osx/button";
+import {Checkbox, theme as checkboxTheme} from "@react-osx/checkbox";
 import React from "react";
 import {ThemeProvider} from "styled-components";
 
@@ -7,25 +8,29 @@ export interface HomeState {
 }
 
 const theme = {
-	button: buttonTheme.dark
+	dark: {
+		button: buttonTheme.dark,
+		checkbox: checkboxTheme.dark
+	},
+	light: {}
 };
 
 export class Home extends React.Component {
-	public state: HomeState = {};
-	public componentDidMount() {
-		fetch("/api/user")
-			.then(res => res.json())
-			.then(data => this.setState(data));
-	}
 	public render() {
 		return (
-			<ThemeProvider theme={theme}>
+			<ThemeProvider theme={theme.dark}>
 				<div
 					style={{
 						background: "hsl(120, 1%, 19%)",
 						color: "white",
 						padding: 100
 					}}>
+					<h2>Checkbox</h2>
+					<Checkbox/>
+					<br/>
+					<Checkbox label="Body"/>
+					<br/>
+					<Checkbox label="Title"/>
 					<h2>Buttons</h2>
 					<h3>Small</h3>
 					<ButtonGroup>

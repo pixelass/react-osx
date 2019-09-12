@@ -7,16 +7,14 @@
   "author": "Gregor Adams <greg@pixelass.com>",
   "main": "server.js",
   "scripts": {
-    "prebuild": "yarn flush; yarn clean && ngineer -p",
+    "prebuild": "yarn clean && ngineer -p",
     "build": "ngineer build -p",
     "clean": "ngineer clean",
-    "predev": "yarn flush; yarn clean && ngineer",
-    "dev": "concurrently 'yarn serve:json' 'ngineer -w' 'ngineer dev-server'",
-    "flush": "node flush.js",
+    "predev": "yarn clean && ngineer",
+    "dev": "concurrently 'ngineer -w' 'ngineer dev-server'",
     "lint": "ngineer lint 'src/**/*.{ts,tsx,css}'",
-    "serve:json": "json-server --watch db.json --port 1337",
     "serve:public": "serve public",
-    "prestart": "yarn flush; yarn build",
+    "prestart": "yarn build",
     "start": "yarn serve:public"
   },
   "browserslist": [
@@ -28,6 +26,7 @@
   "dependencies": {
     "@ngineer/head": "1.3.1",
     "@react-osx/button": "0.0.0",
+    "@react-osx/checkbox": "0.0.0",
     "@react-osx/focus-ring": "0.0.0",
     "@types/react": "16.9.2",
     "@types/react-dom": "16.9.0",
