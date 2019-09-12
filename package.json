@@ -8,7 +8,8 @@
   "author": "Gregor Adams <greg@pixelass.com>",
   "main": "index.js",
   "scripts": {
-    "dev": "lerna run dev --parallel"
+    "dev": "lerna run dev --parallel",
+    "build": "lerna run build --stream"
   },
   "workspaces": [
     "packages/*"
