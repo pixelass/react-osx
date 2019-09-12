@@ -47,7 +47,8 @@
 		"watch": "ngineer --rollup --watch"
 	},
 	"dependencies": {
-		"@react-osx/focus-ring": "0.0.0",
+    "@react-osx/focus-ring": "0.0.0",
+    "@react-osx/colors": "0.0.0",
 		"@types/react": "^16.9.2",
 		"@types/styled-components": "4.1.19",
 		"ts-lib": "^0.0.5"

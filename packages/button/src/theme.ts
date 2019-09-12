@@ -1,21 +1,4 @@
-const colors = {
-	white: "hsl(0, 0%, 100%)",
-	black: "hsl(0, 0%, 0%)",
-	blue: {
-		600: "hsl(215, 75%, 51%)",
-		500: "hsl(215, 85%, 55%)",
-		200: "hsl(214, 88%, 69%)",
-		100: "hsl(214, 82%, 75%)"
-	},
-	grey: {
-		600: "hsl(0, 0%, 39%)",
-		300: "hsl(0, 0%, 45%)",
-		200: "hsl(0, 0%, 51%)",
-		100: "hsl(60, 1%, 79%)",
-		50: "hsl(60, 3%, 88%)"
-
-	}
-};
+import {colors} from "@react-osx/colors";
 
 const decoration = {
 	shadow: {
@@ -58,7 +41,7 @@ export const theme = {
 		},
 		default: {
 			border: {
-				color: colors.grey[200]
+				color: colors.grey[500]
 			},
 			borderRadius: "3px",
 			boxShadow: `inset 0 0.5px 0.5px 0 ${colors.grey[200]}, ${decoration.shadow[1]}`,
@@ -73,26 +56,21 @@ export const theme = {
 			},
 			active: {
 				border: {
-					color: colors.blue[200]
+					color: colors.blue[300]
 				},
 				boxShadow: `inset 0 0.5px 0.5px 0 ${colors.blue[200]}, ${decoration.shadow[1]}`,
 				color: colors.white,
 				background: {
-					image: `linear-gradient(0deg, ${colors.blue[600]}, ${colors.blue[500]})`,
-					color: colors.blue[600]
+					image: `linear-gradient(0deg, ${colors.blue[500]}, ${colors.blue[450]})`,
+					color: colors.blue[450]
 				}
 			}
 		},
 		monochrome: {
 			border: {
-				color: colors.grey[200]
+				color: colors.grey[500]
 			},
-			borderRadius: "3px",
 			boxShadow: `inset 0 0.5px 0.5px 0 ${colors.grey[200]}, ${decoration.shadow[1]}`,
-			font: {
-				weight: "normal",
-				family: "-apple-system, sans-serif"
-			},
 			color: colors.white,
 			background: {
 				image: "none",
@@ -100,57 +78,57 @@ export const theme = {
 			},
 			active: {
 				border: {
-					color: colors.grey[200]
+					color: colors.grey[450]
 				},
-				boxShadow: `inset 0 0.5px 0.5px 0 ${colors.grey[200]}, ${decoration.shadow[1]}`,
+				boxShadow: `inset 0 0.5px 0.5px 0 ${colors.grey[150]}, ${decoration.shadow[1]}`,
 				color: colors.white,
 				background: {
 					image: "none",
-					color: colors.grey[300]
+					color: colors.grey[550]
 				}
 			}
 		},
 		active: {
 			border: {
-				color: colors.blue[200]
+				color: colors.blue[500]
 			},
 			boxShadow: `inset 0 0.5px 0.5px 0 ${colors.blue[200]}, ${decoration.shadow[1]}`,
 			color: colors.white,
 			background: {
 				image: "none",
-				color: colors.blue[600]
+				color: colors.blue[500]
 			},
 			active: {
 				border: {
-					color: colors.blue[100]
+					color: colors.blue[250]
 				},
-				boxShadow: `inset 0 0.5px 0.5px 0 ${colors.blue[100]}, ${decoration.shadow[1]}`,
+				boxShadow: `inset 0 0.5px 0.5px 0 ${colors.blue[200]}, ${decoration.shadow[1]}`,
 				color: colors.white,
 				background: {
-					image: `linear-gradient(0deg, ${colors.blue[600]}, ${colors.blue[500]})`,
-					color: colors.blue[500]
+					image: `linear-gradient(0deg, ${colors.blue[500]}, ${colors.blue[450]})`,
+					color: colors.blue[450]
 				}
 			}
 		},
 		selected: {
 			border: {
-				color: colors.grey[600]
+				color: colors.grey[300]
 			},
-			boxShadow: `inset 0 0.5px 0.5px 0 ${colors.grey[50]}, ${decoration.shadow[1]}`,
+			boxShadow: `inset 0 0.5px 0.5px 0 ${colors.grey[100]}, ${decoration.shadow[1]}`,
 			color: colors.black,
 			background: {
 				image: "none",
-				color: colors.grey[100]
+				color: colors.grey[200]
 			},
 			active: {
 				border: {
-					color: colors.grey[500]
+					color: colors.grey[250]
 				},
 				boxShadow: `inset 0 0.5px 0.5px 0 ${colors.white}, ${decoration.shadow[1]}`,
 				color: colors.black,
 				background: {
 					image: "none",
-					color: colors.grey[50]
+					color: colors.grey[150]
 				}
 			}
 		}
